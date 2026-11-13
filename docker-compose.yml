@@ -1,12 +1,13 @@
 # Local preview: docker compose up  ->  http://localhost:4000
 services:
   jekyll:
-    image: ruby:3.3
+    image: ruby:2.7  # github-pages pins jekyll 3.9 / liquid 4.0.3, which break on Ruby 3.x
     working_dir: /srv/jekyll
     environment:
       BUNDLE_PATH: /usr/local/bundle
     command: >
-      sh -c "bundle install &&
+      sh -c "gem install bundler -v 2.4.22 &&
+             bundle install &&
              bundle exec jekyll serve --livereload --host 0.0.0.0 --force_polling"
     ports:
       - "4000:4000"
