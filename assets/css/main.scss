@@ -136,3 +136,11 @@ input, textarea, select {
   background: rgba($teal, 0.35);
   color: $ice;
 }
+
+/* GitHub icon is near-black in the theme; make it light on the dark background */
+.social-icons .fa-github,
+.social-icons .fa-github-alt,
+.social-icons .fa-github-square,
+.social-icons .fa-square-github {
+  color: $ice;
+}
