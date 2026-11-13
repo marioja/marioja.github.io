@@ -2,3 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+
+# Claude Code / ruflo managed files
+.claude-flow/
+.swarm/
