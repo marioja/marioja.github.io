@@ -40,14 +40,25 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # not part of the site: importer script and its pnpm node_modules, dev tooling
+  - scripts/
+  - docker-compose.yml
+  - CLAUDE.md
+  # tool-managed folders (Jekyll skips dot-folders anyway; this also keeps the watcher out)
+  - .claude/
+  - .claude-flow/
+  - .swarm/
+  - .ruv-swarm/
+  - .agents/
+  - _test_posts/
 
 # Plugins (previously gems:)
 plugins:
