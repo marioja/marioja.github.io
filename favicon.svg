@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Mario's personal blog</title>
+  <style>
+    /* Light browser theme: navy tile, teal letter */
+    .tile { fill: #0a1628; }
+    .mark { fill: #2dd4bf; }
+    /* Dark browser theme: teal tile, navy letter, so it stands out on dark tab strips */
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #2dd4bf; }
+      .mark { fill: #0a1628; }
+    }
+  </style>
+  <rect class="tile" width="64" height="64" rx="14"/>
+  <path class="mark" d="M13 48V16h8.6L32 33.4 42.4 16H51v32h-8V30.6l-7.6 12.4h-6.8L21 30.6V48z"/>
+</svg>

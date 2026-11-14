@@ -28,3 +28,7 @@ ruvector.db
 # ruflo init templates and runtime state (tool-managed; keep on disk, do not commit)
 .claude/*
 .agents/
+
+# importer deps
+scripts/node_modules/
+.ruv-swarm/
