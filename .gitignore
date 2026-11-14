@@ -6,3 +6,25 @@ Gemfile.lock
 # Claude Code / ruflo managed files
 .claude-flow/
 .swarm/
+
+# Ruflo local secrets and runtime data
+.env
+.env.local
+.env.*.local
+.claude-flow/data/
+.claude-flow/logs/
+.claude-flow/sessions/
+.mcp.json
+.claude/settings.json
+ruvector.db
+.claude-flow/metrics/
+.claude-flow/security/
+.claude-flow/CAPABILITIES.md
+.claude-flow/config.yaml
+.claude-flow/swarm/
+.claude-flow/daemon-state.json
+.claude-flow/daemon.pid
+
+# ruflo init templates and runtime state (tool-managed; keep on disk, do not commit)
+.claude/*
+.agents/
