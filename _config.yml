@@ -72,7 +72,7 @@ plugins:
 author:
   name   : "Mario Jauvin"
   avatar : "/assets/images/IMG_3198-square.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Writing since 2006 about computer and network performance, Java development, VoIP and photography."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
